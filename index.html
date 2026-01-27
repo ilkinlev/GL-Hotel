@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GL Hotel Baku</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <h1>GL HOTEL</h1>
+          <p class="logo-subtitle">Baku's Finest Luxury Hotel</p>
+        </div>
+        <nav class="nav">
+          <a href="#rooms" data-en="Rooms" data-az="Otaqlar">Rooms</a>
+          <a href="#gallery" data-en="Gallery" data-az="Qalereya">Gallery</a>
+          <a href="#contact" data-en="Contact" data-az="Əlaqə">Contact</a>
+        </nav>
+        <div class="language-toggle" onclick="toggleLanguage()">
+          <span id="langText">AZ</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">GL HOTEL</h1>
+        <p
+          class="hero-subtitle"
+          data-en="Hotel of the Finest Luxury, Baku"
+          data-az="Ən yaxşı lüks otel, Bakı"
+        >
+          Hotel of the Finest Luxury, Baku
+        </p>
+        <a
+          href="#booking"
+          class="hero-btn"
+          data-en="BOOK RESERVATION"
+          data-az="Yeni Rezerv"
+          >BOOK RESERVATION</a
+        >
+      </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+      <!-- Left Content -->
+      <div class="left-content">
+        <!-- Rooms Section -->
+        <section id="rooms" class="rooms-section">
+          <h2
+            class="section-title"
+            data-en="COMFORT AND MEETING POINT"
+            data-az="KONFOR VƏ ESTETIĞIN BIRLƏŞMƏSİ"
+          >
+            COMFORT AND MEETING POINT
+          </h2>
+
+          <div class="room-cards">
+            <!-- Standard Room -->
+            <div class="room-card-horizontal">
+              <div class="room-image-wrapper">
+                <div class="room-gallery-container" data-room="standard">
+                  <img
+                    src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800"
+                    alt="Standard Room"
+                    class="active"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800"
+                    alt="Standard Room"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800"
+                    alt="Standard Room"
+                  />
+                  <button
+                    class="gallery-arrow prev"
+                    onclick="changeImage('standard', -1)"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    class="gallery-arrow next"
+                    onclick="changeImage('standard', 1)"
+                  >
+                    ›
+                  </button>
+                </div>
+              </div>
+              <div class="room-details">
+                <h3 data-en="Standard Room" data-az="Standart Otaq">
+                  Standard Room
+                </h3>
+                <ul>
+                  <li
+                    data-en="Minibar, air conditioning"
+                    data-az="Minibar, kondisioner"
+                  >
+                    Minibar, air conditioning
+                  </li>
+                  <li data-en="40-inch LED TV" data-az="40-düym LED TV">
+                    40-inch LED TV
+                  </li>
+                  <li data-en="Free Wi-Fi" data-az="Pulsuz Wi-Fi">
+                    Free Wi-Fi
+                  </li>
+                  <li data-en="Room Service" data-az="Otaq Xidməti">
+                    Room Service
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Deluxe Room -->
+            <div class="room-card-horizontal">
+              <div class="room-image-wrapper">
+                <div class="room-gallery-container" data-room="deluxe">
+                  <img
+                    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+                    alt="Deluxe Room"
+                    class="active"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+                    alt="Deluxe Room"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800"
+                    alt="Deluxe Room"
+                  />
+                  <button
+                    class="gallery-arrow prev"
+                    onclick="changeImage('deluxe', -1)"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    class="gallery-arrow next"
+                    onclick="changeImage('deluxe', 1)"
+                  >
+                    ›
+                  </button>
+                </div>
+              </div>
+              <div class="room-details">
+                <h3 data-en="Deluxe Room" data-az="Deluxe Otaq">Deluxe Room</h3>
+                <ul>
+                  <li data-en="Minibar" data-az="Minibar">Minibar</li>
+                  <li data-en="50-inch LED TV" data-az="50-düym LED TV">
+                    50-inch LED TV
+                  </li>
+                  <li
+                    data-en="Free High-Speed Wi-Fi"
+                    data-az="Pulsuz Yüksək Sürətli Wi-Fi"
+                  >
+                    Free High-Speed Wi-Fi
+                  </li>
+                  <li data-en="Premium Service" data-az="Premium Xidmət">
+                    Premium Service
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+          <h2
+            class="section-title"
+            data-en="CONTACT"
+            data-az="ƏLAQƏ"
+          >
+            CONTACT
+          </h2>
+
+          <div class="contact-grid">
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1519.6328858235536!2d49.8678683!3d40.3808019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030884000198ebf%3A0xeaac43c55eeabecb!2sGallery%20Lux%20Hotel!5e0!3m2!1str!2saz!4v1769508876149!5m2!1str!2saz"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="contact-form-wrapper">
+              <h3 data-en="CONTACT US" data-az="BIZE ULAŞIN">CONTACT US</h3>
+              <form class="contact-form" onsubmit="handleContact(event)">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  data-en-placeholder="Name"
+                  data-az-placeholder="Ad"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  data-en-placeholder="Email"
+                  data-az-placeholder="E-poçt"
+                  required
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  data-en-placeholder="Phone"
+                  data-az-placeholder="Telefon"
+                />
+                <textarea
+                  rows="4"
+                  placeholder="Message"
+                  data-en-placeholder="Message"
+                  data-az-placeholder="Mesaj"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="submit-btn"
+                  data-en="SEND"
+                  data-az="GÖNDƏR"
+                >
+                  SEND
+                </button>
+              </form>
+
+              <div class="social-links">
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">📘</a>
+                <a href="#" class="social-icon">🐦</a>
+                <a href="https://wa.me/994555806010" class="social-icon">💬</a>
+              </div>
+
+              <div class="contact-info">
+                <p>
+                  <strong data-en="Address:" data-az="Ünvan:">Address:</strong>
+                  72 Fazayil Bayramov St, Baku
+                </p>
+                <p>
+                  <strong data-en="Reservations:" data-az="Bronlaşma:"
+                    >Reservations:</strong
+                  >
+                  +994 55 580 6010
+                </p>
+                <p><strong>Email:</strong> galleryluxhotel@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Sidebar -->
+      <aside class="right-sidebar">
+        <!-- Fresh Products Card -->
+        <div class="sidebar-card">
+          <h3 data-en="FRESH LOCAL PRODUCTS" data-az="TƏZƏ YERLİ MƏHSULLAR">
+            FRESH LOCAL PRODUCTS
+          </h3>
+          <p
+            data-en="Every element of our dishes is sourced from the freshest local ingredients."
+            data-az="Hər yemək ən təzə yerli məhsullardan hazırlanır."
+          >
+            Every element of our dishes is sourced from the freshest local
+            ingredients.
+          </p>
+        </div>
+
+        <!-- Special Service Card -->
+        <div class="sidebar-card">
+          <h3
+            data-en="EXCLUSIVE QUALITY SERVICE"
+            data-az="EKSKLÜZİV KEYFİYYƏTLİ XİDMƏT"
+          >
+            EXCLUSIVE QUALITY SERVICE
+          </h3>
+          <p data-en="Unforgettable" data-az="Unudulmaz">Unforgettable</p>
+        </div>
+
+        <!-- Art & Sun Card -->
+        <div class="sidebar-card">
+          <h3 data-en="ART & SUNLIGHT" data-az="SANAT & GÜNIŞIĞI">
+            ART & SUNLIGHT
+          </h3>
+          <p
+            data-en="Natural daylight creates unique atmospheres in our elegant spaces."
+            data-az="Təbii işıq zərif məkanlarımızda unikal atmosfer yaradır."
+          >
+            Natural daylight creates unique atmospheres in our elegant spaces.
+          </p>
+          <a
+            href="#gallery"
+            class="view-menu-btn"
+            data-en="VIEW GALLERY"
+            data-az="QALEREYA BAXIŞ"
+            >VIEW GALLERY</a
+          >
+        </div>
+
+        <!-- Gallery Section -->
+        <div id="gallery" class="sidebar-gallery">
+          <h3 data-en="GALLERY" data-az="QALEREYA">GALLERY</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=200"
+                alt="Gallery"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=200"
+                alt="Gallery"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=200"
+                alt="Gallery"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=200"
+                alt="Gallery"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=200"
+                alt="Gallery"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=200"
+                alt="Gallery"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=200"
+                alt="Gallery"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=200"
+                alt="Gallery"
+              />
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <h2 data-en="BOOK YOUR STAY" data-az="BRONLAŞDIRIN">BOOK YOUR STAY</h2>
+
+        <form class="booking-form" onsubmit="handleBooking(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en="Check-in" data-az="Giriş">Check-in</label>
+              <input type="date" id="checkIn" required />
+            </div>
+            <div class="form-group">
+              <label data-en="Check-out" data-az="Çıxış">Check-out</label>
+              <input type="date" id="checkOut" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en="Adults" data-az="Böyüklər">Adults</label>
+              <select id="adults">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-en="Children" data-az="Uşaqlar">Children</label>
+              <select id="children">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label data-en="Room Type" data-az="Otaq Növü">Room Type</label>
+            <select id="roomType">
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Room</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-en="Full Name" data-az="Tam Ad">Full Name</label>
+            <input type="text" id="guestName" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label data-en="Phone" data-az="Telefon">Phone</label>
+              <input type="tel" id="phone" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label data-en="Special Requests" data-az="Xüsusi İstəklər"
+              >Special Requests</label
+            >
+            <textarea id="requests" rows="3"></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn-gold full-width"
+            data-en="SEND BOOKING VIA WHATSAPP"
+            data-az="WHATSAPP VASITƏSILƏ GÖNDƏR"
+          >
+            SEND BOOKING VIA WHATSAPP
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Gallery Popup -->
+    <div id="gallery-popup" class="gallery-popup">
+      <span class="close-gallery" onclick="closeGalleryPopup()">&times;</span>
+      <button class="gallery-nav prev" onclick="changeGalleryImage(-1)">
+        ‹
+      </button>
+      <img id="popup-image" src="" alt="Gallery Image" />
+      <button class="gallery-nav next" onclick="changeGalleryImage(1)">
+        ›
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
