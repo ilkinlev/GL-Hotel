@@ -167,7 +167,7 @@ function handleBooking(event) {
   if (requests)
     message += `${currentLang === "en" ? "Special Requests" : "Xüsusi İstəklər"}: ${requests}\n`;
 
-  const whatsappNumber = "994775806010";
+  const whatsappNumber = "994555806010";
 
   const encodedMessage = encodeURIComponent(message);
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
